@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>MusicWave</title>
+
+
+    <meta name="theme-color"
+          content="#1DB954">
+
+
+    <link rel="icon"
+          href="/icon-192.png">
+
+
+    <link rel="manifest"
+          href="/manifest.json">
+
+
+    <link rel="stylesheet"
+          href="/styles.css">
+
+
+</head>
+
+
+<body>
+
+
+    <aside class="sidebar">
+
+
+        <div class="logo">
+
+            <h1>
+                🎵 MusicWave
+            </h1>
+
+        </div>
+
+
+
+        <nav>
+
+            <ul>
+
+
+                <li>
+                    <a href="#">
+                        🏠 Inicio
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#songs">
+                        🎧 Canciones
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#favorites">
+                        ❤️ Favoritos
+                    </a>
+                </li>
+
+
+            </ul>
+
+        </nav>
+
+
+
+        <button id="installBtn"
+                class="install-btn">
+
+            📲 Instalar App
+
+        </button>
+
+
+
+    </aside>
+
+
+
+
+
+    <main>
+
+
+        <header class="hero">
+
+
+            <h2>
+
+                Tu música favorita en un solo lugar
+
+            </h2>
+
+
+
+            <p>
+
+                Descubre canciones, crea tu colección
+                de favoritos y disfruta una experiencia
+                moderna tipo Spotify.
+
+            </p>
+
+
+
+            <input type="text"
+                   id="search"
+                   placeholder="Buscar canción o artista...">
+
+
+
+        </header>
+
+
+
+
+
+        <section id="songs">
+
+
+            <h2>
+
+                Canciones Disponibles
+
+            </h2>
+
+
+
+            <div id="songContainer"
+                 class="song-grid">
+
+
+            </div>
+
+
+
+        </section>
+
+
+
+
+
+        <section id="favorites">
+
+
+            <h2>
+
+                Favoritos
+
+            </h2>
+
+
+
+            <div id="favoriteContainer"
+                 class="song-grid">
+
+
+            </div>
+
+
+
+        </section>
+
+
+
+    </main>
+
+
+
+
+
+    <!-- REPRODUCTOR MUSICWAVE -->
+
+
+    <div class="music-player">
+
+
+
+        <div class="current-song">
+
+
+            <h3 id="currentTitle">
+
+                Ninguna canción
+
+            </h3>
+
+
+            <p id="currentArtist">
+
+                -
+
+            </p>
+
+
+
+        </div>
+
+
+
+
+
+        <audio id="audioPlayer">
+
+
+        </audio>
+
+
+
+
+
+        <div class="player-controls">
+
+
+            <button id="prevBtn">
+
+                ⏮️
+
+            </button>
+
+
+
+            <button id="playBtn">
+
+                ▶️
+
+            </button>
+
+
+
+            <button id="nextBtn">
+
+                ⏭️
+
+            </button>
+
+
+
+        </div>
+
+
+
+
+
+        <div class="progress-container">
+
+
+            <input type="range"
+                   id="progress"
+                   value="0"
+                   min="0"
+                   max="100">
+
+
+
+        </div>
+
+
+
+
+
+        <div class="volume-container">
+
+
+            🔊
+
+
+            <input type="range"
+                   id="volume"
+                   min="0"
+                   max="1"
+                   step="0.01"
+                   value="1">
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+    <!-- SCRIPTS -->
+
+
+    <script src="favorites.js"></script>
+
+
+    <script src="install.js"></script>
+
+
+    <script src="app.js"></script>
+
+
+    <p>Melvin 3° Software INO </p>
+</body>
+
+
+</html>
